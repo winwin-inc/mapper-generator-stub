@@ -2,14 +2,11 @@
 
 declare(strict_types=1);
 
-namespace winwin\mapper\annotations;
+namespace winwin\mapper\attribute;
 
 use Doctrine\Common\Annotations\Annotation\Target;
 
-/**
- * @Annotation
- * @Target({"PROPERTY"})
- */
+#[\Attribute(\Attribute::TARGET_PROPERTY)]
 class BuilderIgnore
 {
 }
